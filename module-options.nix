@@ -143,9 +143,9 @@ in
       description = ''
         File to look for to determine the root of the project in the
         build.wrapper.
-        Set to null to let treefmt use its native detection.
+        Leave set to null to let treefmt use its native detection.
       '';
-      default = ".git/config";
+      default = null;
       type = types.nullOr types.str;
     };
 
